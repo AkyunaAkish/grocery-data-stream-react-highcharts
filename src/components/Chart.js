@@ -8,6 +8,15 @@ const formatShoppingItems = (items) => {
   }).join('<br/>')
 }
 
+const randomColor = function() {
+    var x=Math.round(0xffffff * Math.random()).toString(16);
+    var y=(6-x.length);
+    var z="000000";
+    var z1 = z.substring(0,y);
+    var color = "#" + z1 + x;
+    return color;
+  }
+
 class Chart extends Component {
   constructor(props) {
     super(props)
@@ -71,7 +80,7 @@ class Chart extends Component {
         },
         series: [{
           name: 'Grocery Store Purchase',
-          color: 'rgba(223, 83, 83, .5)',
+          color: 'rgba(189,60,59, .5)',
           data: []
         }]
       }
