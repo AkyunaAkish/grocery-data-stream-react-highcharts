@@ -1,0 +1,9 @@
+{
+  "firebase": "react-grocery-stream",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
